@@ -19,7 +19,7 @@ const Form = ({ input, setInput, tasks, setTasks, editTasks, setEditTasks }) => 
         }
     }, [setInput, editTasks])
 
-    const onInputChange = (event) => {
+    const onBottonChange = (event) => {
         setInput(event.target.value);
     }
 
@@ -40,7 +40,7 @@ const Form = ({ input, setInput, tasks, setTasks, editTasks, setEditTasks }) => 
                 className="task-input"
                 value={input}
                 required
-                onChange={onInputChange}
+                onChange={onBottonChange}
             />
             <button className="button-add" type="submit">{editTasks ? "OK" : "Add"}</button>
         </form>
